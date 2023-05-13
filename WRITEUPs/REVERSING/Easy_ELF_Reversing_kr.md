@@ -47,4 +47,4 @@ La posición 25 nos da la clave para averiguar nuestra contraseña, ya que si es
   - Posición 24: que tiene que llevar una X, segundo if de la función.
   - Posición 25: que tiene que llevar un '\0', es decir, un final de línea.
  
-**SOLUCIÓN**= nuestras password es L1NUX.
+**SOLUCIÓN**= nuestra password es L1NUX.
