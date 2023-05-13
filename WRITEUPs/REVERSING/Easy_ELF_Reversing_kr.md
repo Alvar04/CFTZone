@@ -10,14 +10,14 @@ Como vemos simplemente el programa nos deja introducir una cadena de texto, real
 
 # ANALISIS DEL BINARIO
 
-Para realizar el análisis del binario utilizaremos la herramienta Ghidra. Una vez abierto nuestro binario en Ghidra podemos analizar perfectamente el código, tanto en ensamblador como en C. El siguiente paso es encontrar la funcion en la que el binario realice la comparación de lo que en principio introducimos por texto con los valores que deben ser los correctos. Una analizadas a simple vista las funciones encontramos la función o subrutina **FUN_08048451**
+Para realizar el análisis del binario utilizaremos la herramienta Ghidra. Una vez abierto nuestro binario en Ghidra podemos analizar perfectamente el código, tanto en ensamblador como en C. El siguiente paso es encontrar la funcion en la que el binario realice la comparación de lo que en principio introducimos por texto con los valores que deben ser los correctos. Una vez analizadas a simple vista las funciones encontramos la función o subrutina **FUN_08048451**
 
 <p align="center">
 <image width="500" src="images/FUN_08048451.png" caption="Funcion de compararion">
 </p>
   
-Como podemos ver en la función tenemos una varaibles que pertenecen a posiciones de memoria con el formato de nombre **DAT_0804a021**. Observando, vemos que se realiza una operacion del lenguaje de C, es una **XOR** que corresponde con el símbolo (^) entre los valores que haya en las posiciones de memoria y los valores hexadecimales. Si esas operaciones pasan las sucesivas comprobaciones en de los if, tendremos un 1 en la variable **uVarl** y si alguna falla tendremos un 0. Comencemos a realizar las operaciones en código binario:
-
+Como podemos ver en la función tenemos una varaibles que pertenecen a posiciones de memoria con el formato de nombre **DAT_0804a021**. Observando, vemos que se realiza una operacion del lenguaje de C, es una **XOR** que corresponde con el símbolo (^) entre los valores que haya en las posiciones de memoria y los valores hexadecimales. Si esas operaciones pasan las sucesivas comprobaciones en de los if, tendremos un 1 en la variable **uVarl** y si alguna falla tendremos un 0.
+  
 ## OBTENCION DEL PASSWORD
 
 Realicemos las operaciones XOR:
