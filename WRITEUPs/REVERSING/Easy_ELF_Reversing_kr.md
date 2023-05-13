@@ -18,7 +18,7 @@ Para realizar el análisis del binario utilizaremos la herramienta Ghidra. Una v
   
 Como podemos ver en la función tenemos una varaibles que pertenecen a posiciones de memoria con el formato de nombre **DAT_0804a021**. Observando, vemos que se realiza una operacion del lenguaje de C, es una **XOR** que corresponde con el símbolo (^) entre los valores que haya en las posiciones de memoria y los valores hexadecimales. Si esas operaciones pasan las sucesivas comprobaciones en de los if, tendremos un 1 en la variable **uVarl** y si alguna falla tendremos un 0.
   
-## OBTENCION DEL PASSWORD
+# OBTENCION DEL PASSWORD
 
 Realicemos las operaciones XOR:
   
